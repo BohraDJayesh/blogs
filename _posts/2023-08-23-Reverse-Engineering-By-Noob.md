@@ -1,7 +1,7 @@
 ---
-layout: post
+# layout: post
 title:  "Reverse Engineering 101"
-tags: Reverse Engineering
+tags: "Reverse Engineering"
 ---
 
 # Welcome
