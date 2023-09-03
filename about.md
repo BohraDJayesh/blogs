@@ -28,11 +28,10 @@ key: page-about
 
 ![TeXt Theme](/assets/images/Elephant1.jpeg)
 
-Hello There, I'm a begineer in almost everything and in my opinion i will remain the same untill unless i quit what i'm doing.
-Really loves to demonstrate somthing if interesting... or not doesn't even matters cause if i have to demonstrate something interesting, i will. 
+I see myself as a lifelong learner in various fields, and I have no plans to stop exploring. I enjoy demonstrating things, whether they're naturally interesting or not, because if there's something fascinating to showcase, I'm all in. 
 
 ```javascript
-(() => console.log('Hello, World!'))();
+(() => console.log('Excelsior'))();
 ```
 
 ## Skills
