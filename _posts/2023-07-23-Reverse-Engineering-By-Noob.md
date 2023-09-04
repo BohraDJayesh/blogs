@@ -7,8 +7,8 @@ tags: "Reverse Engineering"
 <script src="/_site/assets/gif-control.js"></script>
 
 ### The Initiation
-Starting with anything is always a tough job for me, where to start, how to start, where to look for and what not.
-I did a lot of 'em and specially the last one.  So, here I am, ready to chat about all these things—what I've tried (which you might want to avoid) and what I should've tried (but didn't).  Phew that was a mouthfull, anyways <br> This module is going to be a lenghty one but will be filled with information to get a kick start in Reverse Engineering so you don't have to search the whole internet for every next step.
+Getting started with anything has always been a bit challenging for me, where to start, how to start, where to look for and what not, I did a lot of 'em and specially the last one.  So, here I am, ready to chat about all these things — what I've tried (which you might want to avoid) and what I should've tried (but didn't).  It might be a mouthful, but no worries. <br> 
+This module is going to be quite extensive, but it will be packed with information to give you a strong start in Reverse Engineering. I'll share everything I know that gave my Reverse Engineering journey a push, so you won't have to scour the entire internet for each next step. And yes, I consider myself a beginner in RE, and I'll stay that way until I achieve something significant in this field.
 **Let's Get started**
 
 #### What you'll learn
@@ -117,14 +117,38 @@ PE stands for Portable Execution and is a file format for executables used for W
 A PE file consists of a number of headers and sections that tell the [dynamic linker](#linker) how to map the file into memory. An executable image consists of several different regions, each of which require different memory protection. For instance, typically the .text section (which holds program code) is mapped as execute/read-only, and the .data section (holding global variables) is mapped as no-execute/read write. Part of the job of the [dynamic linker](#linker) is to map each section to memory individually and assign the correct permissions to the resulting regions, according to the instructions found in the headers.
 <br>
 A typical PE file follows the structure as mentioned below - 
+
 ![PE Files 1](/assets/BlogImages/Portable_Executable_32_bit_Structure_in_SVG_fixed.svg){:id="PEFile1"}
 
 Yup, I Know it's too much to take in but it don't want you focus on everything and overload your brain with unnecessary information that you'll forget the minute you read it, just like in sem exams, but rather will focus on important sections.
-To save you from exploding your own brain, here's a generalized typical overview of an PE file - 
+
+### PE Headers
+
+Let's take a look at each one of the [PE File Structure](#structure-of-an-executable) and a breif introduction of them starting with PE Header. The PE header is an essential part of a Windows executable. It contains detailed information about the structure and properties of the executable for the Windows operating system. It also provides information to operating system on how to map the file into memory to properly execute it. The executable code has designated regions that require a different memory protection and RWX permissions (Read, write and execution permission.).
+<br>
 <br>
 
 ![PE Files 2](/assets/BlogImages/PE2.png){:id="PEFile2"}
+<br>
+<br> The PE header file contains several other chunks of information starting with **DOS Header**.  
 
+
+#### DOS Header
+The DOS header is a relic from the early days of MS-DOS. Its primary purpose is to allow the file to be executed under MS-DOS, which was the predecessor to the Windows operating system, on which the eniter windows os is built. It's main job is to show that it's an MS-DOS executable and contains the MZ field or the magic number as well which for .exe is "4D 5A", or the word "MZ" itself.
+
+#### DOS Stub
+It's existence is questionable. Just after the DOS header comes the DOS stub that just prints an error message saying “This program cannot be run in DOS mode” when the program is run in DOS mode. Nowadays this message is just ignored by operating systems.
+
+#### NT Headers
+NT Headers provide essential information about the structure and organization of a PE file, allowing the Windows operating system to properly load, execute, and manage the executable. It contains several parts some of them are -
+- PE Signature : Located immediately after DOS Stub and identifies the file as PE File.
+- COFF Header :  The COFF (Common Object File Format) Header contains information about the format of the executable, including the machine type (e.g., x86, x64), the number of sections, and the timestamp of the file's creation.
+- Optional Headers : The Optional Header follows the COFF Header and provides additional details about the executable, such as the image base address (the preferred memory address at which the executable should be loaded), the size of the code and data sections as discussed earlier several high level languages that are closed to low level provides this facilities like C, C++ {[ HERE ](#linker)} and the entry point (the address where execution should start). 
+
+#### Section Tables
+This table of section headers provides a structured overview of the executable's layout, helping the Windows operating system load and manage the program's different sections during runtime.
+
+### PE Sections
 
 ---
 
