@@ -1,7 +1,7 @@
 ---
 # layout: post
 title:  "Reverse Engineering 101"
-tags: "Reverse Engineering"
+tags: ["Reverse Engineering"]
 ---
 
 <script src="/_site/assets/gif-control.js"></script>
@@ -170,6 +170,14 @@ In a Portable Executable (PE) file format, various sections are used to organize
 ---
 
 # Labs
+We've nearly finished our theory lessons, and we're almost ready to begin reversing small applications. Before diving into debuggers and certain other application we've to get ourselves familier with Assembly level language, which is actually the closest to the machine language we can get. So to start with real labs we've to look at the **Lowest Level Possible** !!.
+
+## The lowest level possible ?
+As discussed earlier in our Existential Crisis phase, x86 assembly language is the closest or the lowest level we can reach to communicate directly with hardware and registers. To gain a deeper understanding of x86 architecture and assembly language, you can refer to my frustration expressed in the article titled "x86 Assembly: What the hell is it?"
+
+As discussed earlier in our [Existential Crisisis](#why-were-doing-this-) phase, x86 assembly language is the closest or the lowest level we can reach to communicate directly with hardware and registers. To gain a deeper understanding of x86 architecture and assembly language, you can refer to my frustration expressed in the article [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
+
+### [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
 
 Still  In Development Phase.
 
