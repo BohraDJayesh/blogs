@@ -31,7 +31,7 @@ Let's cover the basics first, So what exactly is reverse engineering ? and who e
 - A reverse engineer is an individual who practices this [ART](#) Dismantling objects to unravel their workings, enjoying the challenge of puzzles, devising experiments and tools, embracing unconventional thinking, and maintaining a thirst for continual learning.
 <br>
 
-The first question that popped up in my head is, "Why are we doing this?" Well, it's because the executable code we receive is written in machine language, which isn't easily readable by humans. So, when we look at the program, it's like trying to read a secret code that we don't know. As I mentioned before, it's all in this special computer code, As previously mentioned, it's in the form of machine code, and our task is to perform Reverse Engineering on this machine code to gain insights into what the original code might have been like. This helps us understand what the program was supposed to do in a language we can understand. That's what reverse engineering is all about.<br>
+The first question that popped up in my head is, "Why are we doing this?" Well, it's because the executable code we receive is written in machine language, which isn't easily readable by humans. So, when we look at the program, it's like trying to read a secret code that we don't know. As I mentioned before, it's in the form of machine code, and our task is to perform Reverse Engineering on this machine code to gain insights into what the original code might have been like. This helps us understand what the program was supposed to do in a language we can understand. That's what reverse engineering is all about.<br>
 But again -
 
 ### Why we're doing this ?
@@ -173,11 +173,11 @@ In a Portable Executable (PE) file format, various sections are used to organize
 We've nearly finished our theory lessons, and we're almost ready to begin reversing small applications. Before diving into debuggers and certain other application we've to get ourselves familier with Assembly level language, which is actually the closest to the machine language we can get. So to start with real labs we've to look at the **Lowest Level Possible** !!.
 
 ## The lowest level possible ?
-As discussed earlier in our Existential Crisis phase, x86 assembly language is the closest or the lowest level we can reach to communicate directly with hardware and registers. To gain a deeper understanding of x86 architecture and assembly language, you can refer to my frustration expressed in the article titled "x86 Assembly: What the hell is it?"
 
 As discussed earlier in our [Existential Crisisis](#why-were-doing-this-) phase, x86 assembly language is the closest or the lowest level we can reach to communicate directly with hardware and registers. To gain a deeper understanding of x86 architecture and assembly language, you can refer to my frustration expressed in the article [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
 
-### [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
+### The Last Boring Part
+[x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
 
 Still  In Development Phase.
 
