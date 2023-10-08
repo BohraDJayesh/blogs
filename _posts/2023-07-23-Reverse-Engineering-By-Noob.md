@@ -40,7 +40,7 @@ But again -
 <br>
 By "Why we're doing this" I mean why depending on compilers and various intermediate code ? and not communicating with hardware directly ?<br>
 The simple and to the point to this question would be **Because we are not capable to do so**. If you take a look at my blog post on [x86 assembly language](#), you'll come to understand that writing assembly language (one of the lowest-level programming languages) is highly complex. It involves various components, each with its own set of instructions and protocols. Writing assembly code for every hardware component would be impractical and error-prone. High-level languages abstract these complexities, providing simpler and more human-readable code. Most importantly, they don't compromise our productivity at all. We just have to follow their syntax, and we can accomplish our tasks without writing pages of code for simple calculations<br>
-For your reference [this](https://gist.github.com/jonaed1230/8271be857f35970fbd3e81dc6630d322) is the code of calculator in assembly languages.
+For your reference [this](https://gist.github.com/BohraDJayesh/b35c49ec16237c6746c21f75ccd7dcfa) is the code of calculator in assembly languages.
 
 
 
@@ -177,7 +177,110 @@ We've nearly finished our theory lessons, and we're almost ready to begin revers
 As discussed earlier in our [Existential Crisisis](#why-were-doing-this-) phase, x86 assembly language is the closest or the lowest level we can reach to communicate directly with hardware and registers. To gain a deeper understanding of x86 architecture and assembly language, you can refer to my frustration expressed in the article [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
 
 ### The Last Boring Part
+
 [x86 Assembly, What the hell is it ?](/2023/08/23/x86-Assembly.html)
+
+That really was a journey though, now assuming you does have knowledge of assembly we will be movie with our first reverse engineering file.
+
+## Reverse Engineering
+Now before starting with anything we would start with basic, i.e gdb (or GNU Debugger). I would like you to install [gdb-peda](https://github.com/longld/peda.git), just follow the instructions there and you can install this extension easily along with your gdb debugger. GDB itself helps us a lot in debugging executable, or breaking main funciton, debugging it etc, and peda just adds more to it.<br>
+**Let's get started !!** 
+
+### Begineer
+**I. Our First Crackme -**<br>
+
+Before directly running towards debugger, let's first try to analyze file as well. If we use the strings command to it. <br>
+String command is used to extract strings from the binary, these text strings can include things like error messages, function names, variable names, and other human-readable information that may be embedded within a binary file. we will get a lot of strings but the one i'm interested in are :
+
+
+```bash
+$ strings luna 
+
+/lib64/ld-linux-x86-64.so.2
+Enter password, plz: 
+Invalid value
+Welcome!
+GCC: (GNU) 13.0.1 20230401 (Red Hat 13.0.1-0)
+GCC: (GNU) 13.2.1 20230728 (Red Hat 13.2.1-1)
+3p1202
+.
+.
+.
+.
+.
+.
+.
+...
+luna.cpp
+main
+__libc_start_main@GLIBC_2.34
+_init
+__TMC_END__
+__data_start
+__bss_start
+__gmon_start__
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment
+.gnu.build.attributes
+```
+
+Some of them, specially the last one can be familiar with you but focusing on the topmost strings we can conclude that it must have a string containing containing "Enter password, plz:" and "Invalid value" or "Welcom", and it contains "**main**" which suggest that this program does contains a main function starting point.
+
+Assuming you've downloaded your crackme, to start with GDB, just type gdb < file-name > like this to start with gdb-peda : 
+
+```bash
+$ gdb ./luna
+```
+After that you'll get a interface something like that - 
+
+```bash
+GNU gdb (Debian 10.1-1.7) 10.1.90.20210103-git
+Copyright (C) 2021 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from luna...
+(No debugging symbols found in luna)
+
+gdb-peda$
+```
+
+now we will put a breakpoint, at the main function to analyze it instruction by instruction to see what the could would have been like.
+
+```bash
+gdb-peda$ break main
+Breakpoint 1 at 0x401262
+gdb-peda$ 
+```
+To run the program we will write run, which will initiate the binary and to move each instruction we can use 'n' to only move one instruction per command.
+When clicked on run we would get something like - 
+```bash
+
+```
+
+
 
 Still  In Development Phase.
 
@@ -185,3 +288,4 @@ Still  In Development Phase.
 These are the Questions I asked myself in this process starting with - <br>
 Q. Why PE files are named as "**Portable Executables**" ?<br>
 Q. Why there's a need of object files ? or several intermediate files ?<br>
+
