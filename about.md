@@ -43,13 +43,13 @@ I see myself as a lifelong learner in various fields, and I have no plans to sto
 
 You can find my projects I have worked on and on projects i'm currently working on here.
 
-| `Log File Analyzer` | `Website Builder` | `Plagiarism Checker` |
+| `Log File Analyzer` | `Website Builder` | `IDS - Framework` |
 | --- |  --- | --- |
 | ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
 
 Projects Currenly I'm working on.
 
-| `Packet Analyzer` | `A ŚeraGÓta` |
+| `SARV - A vim like text editor for windows` | `A ŚeraGÓta` |
 | --- |  --- | --- |
 | ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) |
 
@@ -57,6 +57,6 @@ Projects Currenly I'm working on.
 
 Yeah I like listening to [Music](https://open.spotify.com/playlist/7fw3iAEcYFEVkMD7AbsX03?si=3d60848095744647), and playing [Games](#) so here's top 5 songs and games of my playlist. Interested ? Go on click on one of them and enjoy me being wierd and telling random shit about some random topic or lines in these posts.
 
-| `Apocalypse` | `Kiska Rasta Dekhe` | `Choo Lo` | `Tere Bin` | `Kuch to Bata Zindagi` |
+| `Apocalypse` | `Kiska Rasta Dekhe` | `Lá Via Én Rose ` | `Tere Bin` | `Ogo Bideshini` |
 | --- |  --- | --- | --- |  --- |
 | ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
