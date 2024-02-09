@@ -36,6 +36,8 @@ I see myself as a lifelong learner in various fields, and I have no plans to sto
 
 ## Skills
 
+![HTB-Profile](http://www.hackthebox.eu/badge/image/395271)
+
 - I don't have any, atleast that's what i think about myself.
 - Resume ([Resume](https://www.addtoany.com/), [LinkedIn](https://www.addthis.com/))
 
