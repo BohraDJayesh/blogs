@@ -45,15 +45,17 @@ I see myself as a lifelong learner in various fields, and I have no plans to sto
 
 You can find my projects I have worked on and on projects i'm currently working on here.
 
-| `Log File Analyzer` | `Website Builder` | `IDS - Framework` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
+| `Log File Analyzer` | `Website Builder` |
+| --- |  --- |
+| ![Ocean](https://github.com/BohraDJayesh/BohraDJayesh/blob/main/LFA.png) | ![Dark](https://github.com/BohraDJayesh/BohraDJayesh/blob/main/WB2.png) |
+
 
 Projects Currenly I'm working on.
+| `SARV - A vim like text editor for windows` | `IDS - Framework` |
+| --- |  --- |
+| ![Default](https://github.com/BohraDJayesh/BohraDJayesh/blob/main/Sarv.png) | ![Forest](https://github.com/BohraDJayesh/BohraDJayesh/blob/main/IDS.png) |
 
-| `SARV - A vim like text editor for windows` | `A ŚeraGÓta` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) |
+
 
 ### Updated Playlist
 
